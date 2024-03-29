@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import CountOccurrences from './components/CountDigit';
+import RGBComponent from './components/SortRGB';
+import ContainsAllCharacters from './components/StringMatch';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className="App">
+  <div class="container">
+  <div class="box">
+  <h1> Count Occurrences </h1>
+    <span>Solution 1</span>
+    <CountOccurrences/>
+  </div>
+  <div class="box">
+  <h1>RGB Sort Problem </h1>
+    <span>Solution 3</span>
+    <RGBComponent/>
+  </div>
+  <div class="box">
+    <h1>String match Problem </h1>
+    <span>Solution 4</span>
+    <ContainsAllCharacters/>
+  </div>
+  
+</div>
     </div>
   );
 }
